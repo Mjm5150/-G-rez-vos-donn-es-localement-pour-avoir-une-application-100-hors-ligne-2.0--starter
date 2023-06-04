@@ -24,3 +24,12 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+
+    - name: Android Emulator Runner
+      uses: ReactiveCircus/android-emulator-runner@v2.28.0
+      with:
+       api-level: 23
+       target: default
+       arch: x86
+       profile: Nexus 6
+       script: ./gradlew connectedCheck --stacktrace
