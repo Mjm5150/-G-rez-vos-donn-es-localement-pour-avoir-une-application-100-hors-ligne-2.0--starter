@@ -33,6 +33,8 @@ public class TripBookActivity extends AppCompatActivity {
     // 1 - Define the authority of the FileProvider
     private static final String AUTHORITY = "com.openclassrooms.savemytrip.fileprovider";
 
+    private int testIntToRemove = 2;
+
     private ActivityTripBookBinding binding;
 
     // FILE PURPOSE
